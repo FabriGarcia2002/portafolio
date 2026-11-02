@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; 
+}
+
 :root {
     /* Paleta base de Coolors */
     --color-black: #0A0908;
@@ -14,7 +19,6 @@
     --color-dusty-taupe: #A9927D;
     --color-stone-brown: #5E503F;
 
-    /* Asignación semántica para UI */
     --bg-main: var(--color-black);
     --bg-surface: var(--color-slate-dark);
     --text-main: var(--color-white-smoke);

@@ -1,0 +1,38 @@
+header {
+    position: sticky;
+    top: 1.5rem;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+nav {
+    background-color: var(--bg-surface);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 9999px;
+    padding: 0.6rem 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--text-primary);
+}
+
+a.active {
+    color: var(--color-white-smoke); /* Tu color dorado/taupe destacado */
+}
