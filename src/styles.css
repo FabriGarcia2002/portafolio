@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Paleta base de Coolors */
+    --color-black: #0A0908;
+    --color-slate-dark: #22333B;
+    --color-white-smoke: #F2F4F3;
+    --color-dusty-taupe: #A9927D;
+    --color-stone-brown: #5E503F;
+
+    /* Asignación semántica para UI */
+    --bg-main: var(--color-black);
+    --bg-surface: var(--color-slate-dark);
+    --text-main: var(--color-white-smoke);
+    --text-muted: var(--color-dusty-taupe);
+    --text-inverse: var(--color-black);
+    --primary: var(--color-dusty-taupe);
+    --primary-hover: var(--color-stone-brown);
+    --border-subtle: rgba(169, 146, 125, 0.2);
+
+
+    --font-display: "Jersey 10", sans-serif;
+    --font-body: "Geist Pixel", monospace, sans-serif;
+}
+
+
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
